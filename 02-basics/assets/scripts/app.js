@@ -26,6 +26,8 @@ function calculte(operation) {
   const enteredNumber = getUserInput();
   const resultBeforeCalc = currentResult;
 
+  if (!enteredNumber) return;
+
   if (operation === 'ADD') {
     currentResult += enteredNumber;
     operator = '+';
